@@ -23,23 +23,23 @@ def setpixel(x,y,color):
     glEnd()
 
 
-def BresenhamLine(x2,y2,x1,y1, colour):
+def BresenhamLine(x1,y1,x2,y2, colour):
     x=x1
     y=y1
     dx=(x2-x1)
-    dy=(y2-y1)
+    dy=-(y2-y1)
     dt= 2*(dx-dy)
     ds=2*dx
 
     d=2*dx  - dy  #d=d0 initially
     setpixel((x), (y), [0,0,0])
 
-    while y<y2:
-        y=y+1
+    while y>y2:
+        y=y-1
         if d <0:
             d=d+ds
         else:
-            x=x-1
+            x=x+1
             d=d+dt
 
         setpixel((x), (y), colour)
@@ -74,11 +74,11 @@ def main():
         #glClearColor(0.0,0.76,0.56,1.0)
         glClearColor(1,1,1,1.0)
 
-        BresenhamLine(-150,-150,150,150, [1,0,1])#L2  pink correct
+        BresenhamLine(-150,-150,150,150, [1,0,1])#L2  pink 
         BresenhamLine(-150,-50,150,50,[1,1,0])#L1   yellow 
-        BresenhamLine(-50,-150,50,150, [1,0,0]) #L3  red correct
-        BresenhamLine(-50,150,50,-150, [0,1,0])#L4   green
-        BresenhamLine(-150,150,150,-150,[0,0,1])#L5  blue
+        BresenhamLine(-50,-150,50,150, [1,0,0]) #L3  red 
+        BresenhamLine(-50,150,50,-150, [0,1,0])#L4   green correct
+        BresenhamLine(-150,150,150,-150,[0,0,1])#L5  blue correct
         BresenhamLine(-150,50,150,-50,[0,1,1]) #L6   cyan/ sky blue
         
 
