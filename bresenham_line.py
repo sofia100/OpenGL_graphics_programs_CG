@@ -74,12 +74,12 @@ def main():
         #glClearColor(0.0,0.76,0.56,1.0)
         glClearColor(1,1,1,1.0)
 
-        BresenhamLine(-50,-50,150,150, [1,0,1])#L2
-        BresenhamLine(-150,-50,150,50,[1,1,0])#L1
-        BresenhamLine(-50,-150,50,150, [1,0,0]) #L3
-        BresenhamLine(-50,150,50,150, [0,1,0])#L4
-        #BresenhamLine(-150,-150,150,150,[0,0,1])#L5
-        BresenhamLine(-150,50,150,-50,[0,1,1]) #L6
+        BresenhamLine(-150,-150,150,150, [1,0,1])#L2  pink correct
+        BresenhamLine(-150,-50,150,50,[1,1,0])#L1   yellow correct
+        BresenhamLine(-50,-150,50,150, [1,0,0]) #L3  red
+        BresenhamLine(-50,150,50,-150, [0,1,0])#L4   green
+        BresenhamLine(-150,150,-150,-150,[0,0,1])#L5  blue
+        BresenhamLine(-150,50,150,-50,[0,1,1]) #L6   cyan/ sky blue
         
 
         glfw.swap_buffers(window)
