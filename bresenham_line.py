@@ -78,7 +78,7 @@ def main():
         BresenhamLine(-150,-50,150,50,[1,1,0])#L1   yellow correct
         BresenhamLine(-50,-150,50,150, [1,0,0]) #L3  red
         BresenhamLine(-50,150,50,-150, [0,1,0])#L4   green
-        BresenhamLine(-150,150,-150,-150,[0,0,1])#L5  blue
+        BresenhamLine(-150,150,150,-150,[0,0,1])#L5  blue
         BresenhamLine(-150,50,150,-50,[0,1,1]) #L6   cyan/ sky blue
         
 
