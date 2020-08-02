@@ -49,7 +49,7 @@ def main():
     if not glfw.init():
         raise Exception("glfw nt initialized")
 
-    window=glfw.create_window(640,480, "DDA Line Drawing",None,None)
+    window=glfw.create_window(640,480, "Bresenham Line Drawing",None,None)
 
     if not window:
         glfw.terminate()
