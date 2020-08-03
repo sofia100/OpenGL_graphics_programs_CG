@@ -2,7 +2,7 @@
 
 As a part of my 7th semester course, the programs are updated here....
 
-## How to run the files:
+## How to run the files in Windows 10 :
 
 download the files and use
 
