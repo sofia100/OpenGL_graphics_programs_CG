@@ -1,6 +1,6 @@
 # Computer Graphics Programs
 
-As a part of my 7th semester course, the programs are updated here....
+As a part of my 7th semester course, the python OpenGL programs are updated here....
 
 ## How to run the files in Windows 10 :
 
